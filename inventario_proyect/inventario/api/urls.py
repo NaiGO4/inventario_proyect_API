@@ -1,5 +1,5 @@
-from rest_framework import DefaultRouter
-from inventario.api.serializer import ProductoViewSet
+from rest_framework.routers import DefaultRouter
+from inventario.api.view import ProductoViewSet
 
 router = DefaultRouter()
 router.register('productos', ProductoViewSet, basename = 'producto')
